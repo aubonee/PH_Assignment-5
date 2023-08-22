@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- cdn for daisy UI and Tailwind -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- google fonts cdn -->
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,600;1,400;1,800&display=swap" rel="stylesheet">
+      <!-- font awsome cdn -->
+            
+     <script src="https://kit.fontawesome.com/34af142b44.js" crossorigin="anonymous"></script>
+
+
+    <title>Summer sale</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+
+              fonts: {
+                'font-worksans': ['Work Sans', 'sans-serif',],  
+                
+            }
+          }
+        }
+    }
+      </script>
+</head>
+<body class="font-worksans">
+    <header>
+        <!-- banner section  -->
+        
+        <section class="banner flex flex-col lg:flex-row justify-center items-center bg-[#F9F6E2] h-max py-8 w-full">
+            <div class="banner-text lg:w-1/2 h-[350px] text-center  flex flex-col justify-center items-center">
+                <h3>---SALE FEVER---</h3>
+                <h1 class="text-5xl font-bold w-4/6 text-center my-3">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span></h1>
+                <div class="flex flex-row justify-center items-center my-3">
+                    <p class="">Use Promo Code</p>
+                    <p class="rounded-lg font-xl bg-[#E527B2] px-4 py-3 m-2 text-white">SELL200</p>
+                </div>
+            </div>
+            <div class="banner-img lg:w-5/12 flex lg:flex-col justify-around items-center"> <img src="images/Summer 1.png" alt=""></div>
+        </section>
+    </header>
+       <!-- category-section  -->
+    <main class="category-section  bg-[#F8F8F8] w-full ">
+        <div class="flex flex-col lg:flex-row bg-[#F8F8F8] w-full lg:w-5/6 justify-between mx-auto">
+            <section class="card-section  w-full lg:w-8/12">
+                <div class="Kitchenware-card-section my-10">
+                    <div> <h1 class="text-4xl font-bold py-5 text-center lg:text-left">Kitchenware</h1></div>
+                    <div class="Kitchenware-cards grid lg:grid-cols-3 gap-3 justify-center">
+                        <div  onclick="handleclick(this)" class="card w-80 lg:w-64 bg-base-100 l">
+                            <figure class="m-3 h-[180px] rounded-xl bg-[#1111110D] " >
+                              <div class=""><img src="/images/prod1.png" alt="Shoes" class="rounded-xl" /></div>
+                            </figure>
+                           
+                                <div class="card-body py-1 my-2 items-center text-center">
+                                    <div class="rating mb-2">
+                                        
+                                        <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                      </div>
+                                    <h2 class="card-title py-1 px-2 font-bold text-xl">K. Accessories</h2>
+                                    <p class="mb-1 flex-none price">35.00 TK</p>
+                                   
+                                  </div>
+                            
+                            </div>
+                       
+    
+                            <div onclick="handleclick(this)" class="card w-80 lg:w-64 bg-base-100">
+                                <figure class="m-3 h-[180px] rounded-xl bg-[#1111110D] ">
+                                  <div class="py-8"><img src="/images/prod2.png" alt="Shoes" class="rounded-xl" /></div>
+                                </figure>
+                               
+                                    <div class="card-body py-1 my-2 items-center text-center">
+                                        <div class="rating mb-2">
+                                            
+                                            <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                          </div>
+                                        <h2 class="card-title py-1 px-2 font-bold text-xl">K. Accessories</h2>
+                                        <p class=" flex-none price">25.00 TK</p>
+                                        
+                                      </div>
+                                
+                                </div>
+                                <div onclick="handleclick(this)" class="card w-80 lg:w-64 bg-base-100 ">
+                                    <figure class="m-3 h-[180px] rounded-xl bg-[#1111110D]">
+                                      <div class="py-8"><img src="/images/prod3.png" alt="Shoes" class="rounded-xl" /></div>
+                                    </figure>
+                                   
+                                        <div  class="card-body py-1 my-2 items-center text-center">
+                                            <div class="rating mb-2">
+                                                
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                              </div>
+                                            <h2 class="card-title py-1 px-2 font-bold text-xl">Home Cooker</h2>
+                                            <p class="mb-1 flex-none price">49.00 TK</p>
+                                           
+                                            
+                                          </div>
+                                    
+                                    </div>
+    
+                    </div>
+                    
+                </div>
+                <div class="Sportswear-card-section mb-10">
+                    <div> <h1 class="text-4xl font-bold py-5 text-center lg:text-left">Sportswear</h1></div>
+                    <div class="Sportswear-cards grid lg:grid-cols-3 gap-3 justify-center">
+                        <div  onclick="handleclick(this)" class="card w-80 lg:w-64 bg-base-100 ">
+                            <figure class="m-3 h-[200px] rounded-xl bg-[#1111110D] " >
+                              <div class=""><img src="/images/prod4.png" alt="Shoes" class="rounded-xl" /></div>
+                            </figure>
+                           
+                                <div class="card-body py-1 my-2 items-center text-center">
+                                    <div class="rating mb-2">
+                                        
+                                        <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                      </div>
+                                    <h2 class="card-title py-1 px-2 font-bold text-xl">Sports Back Cap</h2>
+                                    <p class="mb-1 flex-none price">49.00 TK</p>
+                                   
+                                   
+                                  </div>
+                            
+                            </div>
+                       
+    
+                            <div onclick="handleclick(this)" class="card w-80 lg:w-64 bg-base-100">
+                                <figure class="m-3 h-[200px] rounded-xl bg-[#1111110D] ">
+                                  <div class="py-8"><img src="/images/prod5.png" alt="Shoes" class="rounded-xl" /></div>
+                                </figure>
+                               
+                                    <div class="card-body py-1 my-2 items-center text-center">
+                                        <div class="rating mb-2">
+                                            
+                                            <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                          </div>
+                                        <h2 class="card-title py-1 px-2 font-bold text-xl">Full Jersey Set</h2>
+                                        <p class=" flex-none price">69.00 TK</p>
+                                        
+                                      </div>
+                                
+                                </div>
+                                <div onclick="handleclick(this)" class="card w-80 lg:w-64 bg-base-100 ">
+                                    <figure class="m-3 h-[200px] rounded-xl bg-[#1111110D]">
+                                      <div class="py-8"><img src="/images/prod6.png" alt="Shoes" class="rounded-xl" /></div>
+                                    </figure>
+                                   
+                                        <div  class="card-body py-1 my-2 items-center text-center">
+                                            <div class="rating mb-2">
+                                                
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                              </div>
+                                            <h2 class="card-title py-1 px-2 font-bold text-xl">Sports cates</h2>
+                                            <p class="mb-1 flex-none price">159.00 TK</p>
+                                           
+                                            
+                                          </div>
+                                    
+                                    </div>
+    
+                    </div>
+                </div>
+
+                <div class="furniture-card-section mb-28">
+                    <div> <h1 class="text-4xl font-bold py-5 text-center lg:text-left">Furniture</h1></div>
+                    <div class="furniture-cards grid lg:grid-cols-3 gap-3 justify-center">
+                        <div  onclick="handleclick(this)" class="card w-80 lg:w-64 bg-base-100 ">
+                            <figure class="m-3 h-[200px] rounded-xl bg-[#1111110D] " >
+                              <div class=""><img src="/images/prod7.png" alt="Shoes" class="rounded-xl" /></div>
+                            </figure>
+                           
+                                <div class="card-body py-1 my-2 items-center text-center">
+                                    <div class="rating mb-2">
+                                        
+                                        <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                        <i class="fa-regular fa-star text-[#FFC107] text-xl"></i>
+                                      </div>
+                                    <h2 class="card-title py-1 px-2 font-bold text-xl">Single Relax Chair</h2>
+                                    <p class="mb-1 flex-none price">185.00 TK</p>
+                                   
+                                    
+                                  </div>
+                            
+                            </div>
+                       
+    
+                            <div onclick="handleclick(this)" class="card w-80 lg:w-64 bg-base-100">
+                                <figure class="m-3 h-[200px] rounded-xl bg-[#1111110D] ">
+                                  <div class="py-8"><img src="/images/prod8.png" alt="Shoes" class="rounded-xl" /></div>
+                                </figure>
+                               
+                                    <div class="card-body py-1 my-2 items-center text-center">
+                                        <div class="rating mb-2">
+                                            
+                                            <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                          </div>
+                                        <h2 class="card-title py-1 px-2 font-bold text-xl">Children play</h2>
+                                        <p class=" flex-none price">299.00 TK</p>
+                                       
+                                      </div>
+                                
+                                </div>
+                                <div onclick="handleclick(this)" class="card w-80 lg:w-64 bg-base-100 ">
+                                    <figure class="m-3 h-[200px] rounded-xl bg-[#1111110D]">
+                                      <div class="py-8"><img src="/images/prod9.png" alt="Shoes" class="rounded-xl" /></div>
+                                    </figure>
+                                   
+                                        <div  class="card-body py-1 my-2 items-center text-center">
+                                            <div class="rating mb-2">
+                                                
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                                <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                            <i class="fa-solid fa-star text-[#FFC107] text-xl"></i>
+                                              </div>
+                                            <h2 class="card-title py-1 px-2 font-bold text-xl">Flexible Sofa</h2>
+                                            <p class="mb-1 flex-none price">399.00 TK</p>
+                                           
+                                           
+                                          </div>
+                                    
+                                    </div>
+    
+                    </div>
+                </div>
+            </section>
+            <section class="cart-section  mb-20 lg:mb-0 w-4/5 md:w-1/2 lg:w-3/12 mt-32 mx-auto lg:ml-20">
+                <div class="cart-section-1 bg-[#FFF]  mb-4 p-5 rounded-lg">
+                   
+                    <h1 class="font-semibold my-2">Have coupon?</h1>
+                    <div class="flex justify-center items-center border-slate-200 border-2 rounded-lg">
+                         <input class= " rounded-l-lg px-2 py-3 w-[400px]"  type="text" id="cuppon-field" placeholder="cupon code">
+                        <button onclick="saleFunc()" class="btn bg-[#E527B2] border-2 border-[#E527B2] text-white  m-0  -ml-1 px-5  py-4 rounded-none rounded-r-lg" id="apply-btn" disabled>Apply</button>
+                       </div>
+                   
+                </div>
+                <div class="cart-section-2 bg-[#FFF]  my-4 p-5 rounded-lg">
+                    <ol class="selected-cart-items font-semibold mx-3" id="selected-cart-items">
+                       
+                    </ol>
+                   <div >  <hr></div>
+                    <div class="flex flex-col justify-center "> 
+                        <div class="total-prices my-5"> 
+                            <p class="font-semibold text-xl my-1" >Total price: <span class="text-gray-400" id="total_price"> 00 Tk</span> </p>
+                            <p class="font-semibold text-xl my-1" >Discount : <span class="text-gray-400"  id="discount"> 00 Tk</span></p>
+                            <p class="font-semibold text-xl my-1" >Total: <span class="text-gray-400"  id="last_total"> 00 Tk</span></p>
+                        </div>
+                        <hr>
+                        <button class="mt-3 btn -mb-12 bg-[#E527B2] text-white w-[260px] mx-auto" id="purchase-btn" onclick="congo_modal.showModal()" disabled> Make Purchase </button>
+                    </div>
+      
+                </div>
+            </section>
+    
+        </div>
+
+  <!-- modal section starts-->
+  <section class="Modal-section">
+
+    
+<dialog id="congo_modal" class="modal">
+  <form method="dialog" class="modal-box flex flex-col justify-center items-center">
+    <img src="images/congo.png" alt="">
+    <h3 class="font-extrabold text-xl">Congratulations</h3>
+    <p class="py-4">Your Purchase the product</p>
+    <div class="modal-action">
+      <!-- if there is a button, it will close the modal -->
+      <button  onclick="goHomeFunc()" class="btn bg-[#E527B2] text-white">Go Home</button>
+    </div>
+  </form>
+</dialog>
+   
+ </section>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
